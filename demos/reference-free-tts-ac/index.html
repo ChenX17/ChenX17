@@ -115,18 +115,12 @@ CONVERSION WITH NON-PARALLEL DATA</h1>
 
 <ul>
 <li>The L1 speaker speaks the General American Accent</li>
-<li>YKWK's native language is Korean</li>
-<li>TXHC's native language is Chinese</li>
+<li>ASI is a male speaker with Hindi accent</li>
+<li>SVBI is a female speaker with Hindi accent</li>
 <li>Dataset (L2-ARCTIC corpus [1]): <a href="https://psi.engr.tamu.edu/l2-arctic-corpus/">https://psi.engr.tamu.edu/l2-arctic-corpus/</a></li>
 </ul>
 
-<h2>Experiment : Evaluating the reference-free golden speakers</h2>
-
-<ul>
-    <li><b>Input speech</b>: original unmodified L2 speech recordings</li>
-    <li><b>Baseline</b>: the reference-free FAC system of Zhao et al. [2]; samples provided through the courtesy of G. Zhao (TAMU)</li>
-    <li><b>Proposed</b>: the proposed reference-free accent conversion model</li>
-</ul>
+<h2>Experiment :</h2>
 
 <table width="100%" class="samples">
 <tbody>
@@ -134,13 +128,31 @@ CONVERSION WITH NON-PARALLEL DATA</h1>
         <th>L2 speaker</th>
         <th>Text</th>
         <th>Input speech</th>
-        <th>Reference-Free Accent conversion (Baseline)</th>
-        <th>Reference-Free Accent conversion (Proposed)</th>
+        <th>TTS</th>
+        <th>Baseline</th>
+        <th>Proposed</th>
+        <th>Ablation-1</th>
+        <th>Ablation-2</th>
     </tr>
     <tr>
         <td rowspan="3">YKWK</td>
         <td>
             He had fulfilled his duty and paid properly.
+        </td>
+        <td>
+            <audio controls="">
+                <source src="wav/reference_l2/ykwk_1102.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+            </audio>
+        </td>
+        <td>
+            <audio controls="">
+                <source src="wav/reference_l2/ykwk_1102.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+            </audio>
+        </td>
+        <td>
+            <audio controls="">
+                <source src="wav/reference_l2/ykwk_1102.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+            </audio>
         </td>
         <td>
             <audio controls="">
@@ -169,6 +181,21 @@ CONVERSION WITH NON-PARALLEL DATA</h1>
         </td>
         <td>
             <audio controls="">
+                <source src="wav/reference_l2/ykwk_1108.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+            </audio>
+        </td>
+        <td>
+            <audio controls="">
+                <source src="wav/reference_l2/ykwk_1108.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+            </audio>
+        </td>
+        <td>
+            <audio controls="">
+                <source src="wav/reference_l2/ykwk_1108.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+            </audio>
+        </td>
+        <td>
+            <audio controls="">
                 <source src="wav/baseline/ykwk_1108.wav" type="audio/wav">Your browser does not support the audio tag.</source>
             </audio>
         </td>
@@ -179,29 +206,24 @@ CONVERSION WITH NON-PARALLEL DATA</h1>
         </td>
     </tr>
     <tr>
-        <td>
-            The Russian music player, the Count, was her obedient slave.
-        </td>
-        <td>
-            <audio controls="">
-                <source src="wav/reference_l2/ykwk_1116.wav" type="audio/wav">Your browser does not support the audio tag.</source>
-            </audio>
-        </td>
-        <td>
-            <audio controls="">
-                <source src="wav/baseline/ykwk_1116.wav" type="audio/wav">Your browser does not support the audio tag.</source>
-            </audio>
-        </td>
-        <td>
-            <audio controls="">
-                <source src="wav/proposed/ykwk_1116.wav" type="audio/wav">Your browser does not support the audio tag.</source>
-            </audio>
-        </td>
-    </tr>
-    <tr>
         <td rowspan="3">TXHC</td>
         <td>
             What an excited whispering and conferring took place.
+        </td>
+        <td>
+            <audio controls="">
+                <source src="wav/reference_l2/txhc_1083.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+            </audio>
+        </td>
+        <td>
+            <audio controls="">
+                <source src="wav/reference_l2/txhc_1083.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+            </audio>
+        </td>
+        <td>
+            <audio controls="">
+                <source src="wav/reference_l2/txhc_1083.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+            </audio>
         </td>
         <td>
             <audio controls="">
@@ -230,32 +252,27 @@ CONVERSION WITH NON-PARALLEL DATA</h1>
         </td>
         <td>
             <audio controls="">
+                <source src="wav/reference_l2/txhc_1085.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+            </audio>
+        </td>
+        <td>
+            <audio controls="">
+                <source src="wav/reference_l2/txhc_1085.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+            </audio>
+        </td>
+        <td>
+            <audio controls="">
+                <source src="wav/reference_l2/txhc_1085.wav" type="audio/wav">Your browser does not support the audio tag.</source>
+            </audio>
+        </td>
+        <td>
+            <audio controls="">
                 <source src="wav/baseline/txhc_1085.wav" type="audio/wav">Your browser does not support the audio tag.</source>
             </audio>
         </td>
         <td>
             <audio controls="">
                 <source src="wav/proposed/txhc_1085.wav" type="audio/wav">Your browser does not support the audio tag.</source>
-            </audio>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            You were making them talk shop, Ruth charged him.
-        </td>
-        <td>
-            <audio controls="">
-                <source src="wav/reference_l2/txhc_1132.wav" type="audio/wav">Your browser does not support the audio tag.</source>
-            </audio>
-        </td>
-        <td>
-            <audio controls="">
-                <source src="wav/baseline/txhc_1132.wav" type="audio/wav">Your browser does not support the audio tag.</source>
-            </audio>
-        </td>
-        <td>
-            <audio controls="">
-                <source src="wav/proposed/txhc_1132.wav" type="audio/wav">Your browser does not support the audio tag.</source>
             </audio>
         </td>
     </tr>
